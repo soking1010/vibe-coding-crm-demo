@@ -1,0 +1,6 @@
+{
+  "thresholds": {
+    "active_within_days": 30,
+    "dormant_within_days": 90
+  }
+}

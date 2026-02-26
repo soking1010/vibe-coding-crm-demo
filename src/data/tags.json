@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tag-vip",
+    "name": "VIP",
+    "color": "orange",
+    "type": "static"
+  },
+  {
+    "id": "tag-corporate",
+    "name": "企業班",
+    "color": "blue",
+    "type": "static"
+  },
+  {
+    "id": "tag-self-pay",
+    "name": "自費",
+    "color": "green",
+    "type": "static"
+  },
+  {
+    "id": "tag-referred",
+    "name": "講師推薦",
+    "color": "purple",
+    "type": "static"
+  },
+  {
+    "id": "tag-early-bird",
+    "name": "早鳥",
+    "color": "teal",
+    "type": "static"
+  },
+  {
+    "id": "tag-returning",
+    "name": "回頭客",
+    "color": "amber",
+    "type": "static"
+  },
+  {
+    "id": "tag-active-learner",
+    "name": "活躍學員",
+    "color": "emerald",
+    "type": "dynamic",
+    "rule": {
+      "field": "last_interaction_at",
+      "operator": "within_days",
+      "value": 30,
+      "description_zh": "最近 30 天內有互動"
+    }
+  },
+  {
+    "id": "tag-high-engagement",
+    "name": "高互動",
+    "color": "violet",
+    "type": "dynamic",
+    "rule": {
+      "field": "events.count",
+      "operator": "count_gte",
+      "value": 5,
+      "description_zh": "累計互動事件 ≥ 5 次"
+    }
+  },
+  {
+    "id": "tag-needs-followup",
+    "name": "需回訪",
+    "color": "red",
+    "type": "dynamic",
+    "rule": {
+      "field": "last_interaction_at",
+      "operator": "older_than_days",
+      "value": 60,
+      "description_zh": "超過 60 天無互動"
+    }
+  }
+]
