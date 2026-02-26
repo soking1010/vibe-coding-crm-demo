@@ -3,6 +3,8 @@
 > 這是「Vibe Coding 系統拆解術」課程 **講座一：CRM 顧客關係管理系統** 的教學示範專案。
 > 用一個講師學員管理系統，展示如何拆解 ER 關聯、狀態機、標籤規則與分群邏輯。
 
+**Demo 站：https://soking1010.github.io/vibe-coding-crm-demo/**
+
 ## 快速啟動
 
 ```bash
